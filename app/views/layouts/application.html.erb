@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ctf Site |  <%= yield(:title) %></title>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title>CEG Tech Forum</title>
+<script type="text/javascript">
+$(document).ready(function(){
+        $("#myCarousel").carousel();
+        });
+</script>
+</head>
+<body>
+<header>
+    &nbsp;&nbsp;&nbsp;
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-6">
+            <a href="/">
+                <%= image_tag 'logo.png' , :size => "300x100" %></a>
+            <div class="slogan">...completing the engineer</div>
+        </div>
+        <div class="col-md-5" >
+            &nbsp;&nbsp;
+            <div align="right">
+                <ul class="nav nav-pills">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/home/about">About Us</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/home/team">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-div">
+    <%= yield %>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-md-4" >
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4" style="color:#333300;">
+            <br>
+            <strong>Contact Us</strong><br><br>
+            Mobile : 123456789<br>
+            Email : ceg@techforum.com<br>
+        </div>
+    </div>
+    <br><br>
+    <p style="font-size:10px;color:#C4C4C4;" align="center">&copy; CEG TECH FORUM</small>
+ </footer>
+</body>
+</body>
+</html>
