@@ -1,0 +1,7 @@
+Current:
+
+	Name, Description, Image, current status, application, suggestion, 
+
+Previous: 
+
+	Name, Description, Video or image, Advantage, Student details, Suggestion

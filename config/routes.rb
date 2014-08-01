@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :events
+
+  resources :projects
+
   get 'home/index'
 
   get 'home/about'

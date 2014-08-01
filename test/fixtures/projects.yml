@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  status: MyString
+  applications: MyString
+  advantages: MyString
+  student_details: MyString
+  suggestions: MyString
+
+two:
+  title: MyString
+  status: MyString
+  applications: MyString
+  advantages: MyString
+  student_details: MyString
+  suggestions: MyString
