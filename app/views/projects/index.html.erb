@@ -24,6 +24,27 @@
       Please kindly provide any suggestion you have to provide for this project. This suggestion has to be sent along with the project title to the projects team email. 
       <br><br>
       <textarea cols=80 rows=20 ></textarea><br><br>
+
+
+<center><h1>listing projects like blog roll with thumbnail</h1></center>
+
+
+    <% @projects.each do |project| %>
+      
+       <h2> <%= project.title %></h2>
+       <br> 
+       <%= project.status %>
+       <br>
+       <%= image_tag project.featured_image.url(:medium) %>
+       <br>
+       <%= link_to 'click here to know more about this event', project %>
+       <hr>
+       <% end %>
+       <div class="btn btn-primary" >
+    <%= link_to 'New Event' , new_project_path %>
+
+    </div>
+    
   
     
     </div>

@@ -18,7 +18,7 @@
 			<img src="assets/facebook-cover-photos.jpg" height=400px width=800px><br><br><br>
 			This is the title of the event and the description of the event is given here. Hello how are you
  
-<center><h1>listing projects like blog roll with thumbnail</h1></center>
+<center><h1>listing events like blog roll with thumbnail</h1></center>
 
 
     <% @events.each do |event| %>
@@ -32,20 +32,22 @@
        <%= link_to 'click here to know more about this event', event %>
        <hr>
        <% end %>
-
-  	
-		<%= link_to 'New Event', new_event_path %>
+       <div class="btn btn-primary" >
+		<%= link_to 'New Event' , new_event_path %>
 
 		</div>
+  	
 
-		<div class="col-md-1"></div>
+		</div>
 		<div class="col-md-1">
 			<div align="center">
 			<h3>Date</h3>
 			02-03-14
 			</div>
-		</div>
+		</div>.
+
 	</div>
+
 </div>
 
 
