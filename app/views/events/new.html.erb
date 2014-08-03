@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+
 <h1>New event</h1>
 <%= form_for(@event, :html => { :multipart => true }) do |f| %>
   <% if @event.errors.any? %>
@@ -12,9 +16,14 @@
     </div>
   <% end %>
 
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
+  </div>
+    <div class="field">
+    <%= f.label :event_date %><br>
+    <%= f.text_field :event_date %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
@@ -37,3 +46,11 @@
 
 
 <%= link_to 'Back', events_path %>
+
+
+ <script>
+$(function() {
+$( "#datepicker" ).datepicker();
+$( "#event_event_date" ).datepicker({ dateFormat: 'dd-mm-yy' });
+});
+</script>
