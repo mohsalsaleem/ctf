@@ -4,13 +4,18 @@
   <strong>Name:</strong>
   <%= @event.name %>
 </h1></p>
-<%= image_tag @event.featured_image.url %>
+<p><h2>
+  <strong>excerpt:</strong>
+  <%= @event.excerpt %>
+</h2></p>
+<%= image_tag @event.featured_image.url %></center>
 <p>
   <strong>Description:</strong>
-  <%= @event.description %>
+  <%= raw(@event.description) %>
 </p>
-</center>
 
+<br>
+<br>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

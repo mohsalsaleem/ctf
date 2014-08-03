@@ -8,9 +8,12 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 gem "paperclip", "~> 4.1"
 
+gem "ckeditor"
 
-
-
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
+gem "byebug"
 
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
