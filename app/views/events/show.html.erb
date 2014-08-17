@@ -1,27 +1,39 @@
 <p id="notice"><%= notice %></p>
-<center>
-<p><h1>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</h1></p>
-<p><h2>
-  <strong>excerpt:</strong>
-  <%= @event.excerpt %>
-  event_date
-</h2></p>
-<p><h2>
-  <strong>event date:</strong>
-  <%= @event. event_date %>
- 
-</h2></p>
-<%= image_tag @event.featured_image.url %></center>
-<p>
-  <strong>Description:</strong>
-  <%= raw(@event.description) %>
-</p>
 
-<br>
-<br>
+
+<div class="main-div">
+	<div class="row">
+		<div class="col-md-2" style="margin-top:30px;margin-left:5px;">
+			<ul class="nav nav-stacked">
+				<li><a href="#">kurukshetras</a></li>
+				<li><a href="#">Ipsem Lor</a></li>
+				<li><a href="#">Hello World</a></li>
+				<li><a href="#">How are you??</a></li>
+				<li><a href="#">This is me</a></li>
+			</ul>
+		</div>
+		<div class="col-md-7">
+			<h3><%= @event.name %></h3>
+			<%= image_tag @event.featured_image.url(:large) %><br><br><br>
+			<h2>short summary:</h2>
+			<%= @event.excerpt %>
+			<h2><br><br>
+			<p>
+  				<h2>Description:</h2>
+ 				 <%= raw(@event.description) %>
+			</p>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-1">
+			<div align="center">
+			<h3>Date</h3>
+			<%= @event.event_date %>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to 'Back', events_path %> |
+<%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
