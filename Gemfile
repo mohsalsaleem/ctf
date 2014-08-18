@@ -10,6 +10,10 @@ gem "paperclip", "~> 4.1"
 
 gem "ckeditor"
 
+#gem 'rails_admin'
+
+gem 'activeadmin',         github: 'gregbell/active_admin'
+
 gem 'devise'
 gem 'cancan'
 gem 'rolify'
