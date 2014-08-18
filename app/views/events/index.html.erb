@@ -14,9 +14,8 @@
 			</ul>
 		</div>
 		<div class="col-md-7">
-			<h3>Title of the Event</h3>
-			<img src="assets/facebook-cover-photos.jpg" height=400px width=800px><br><br><br>
-			This is the title of the event and the description of the event is given here. Hello how are you
+			<h3>Events</h3>
+			
  
 <center><h1>listing events like blog roll with thumbnail</h1></center>
 
@@ -33,7 +32,7 @@
    		<tr>
 		       <td><%= image_tag event.featured_image.url(:medium) %></td>
 		       <td><%= event.excerpt %>
-		       <%= link_to 'click here to know more about this event', event %>
+		       <%= link_to '[click here to know more about this event ...]', event %>
 		       </td>
 		</tr>
         </tbody>
@@ -42,16 +41,11 @@
     <% end %>
 
        <div class="btn btn-primary" >
-		<%= link_to 'New Event' , new_event_path %>
-
+       	
+  <%= link_to 'New Event' , new_event_path %>
+       	
 		</div>
 
-
-
-
- 
-    
-      
       
    
 
