@@ -52,9 +52,6 @@ GEM
       sass (~> 3.2)
       thor
     builder (3.2.2)
-    byebug (3.2.0)
-      columnize (~> 0.8)
-      debugger-linecache (~> 1.2)
     cancan (1.6.10)
     ckeditor (4.1.0)
       mime-types
@@ -70,8 +67,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.1)
-    columnize (0.8.9)
-    debugger-linecache (1.2.0)
     devise (3.2.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -188,7 +183,6 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
-  byebug
   cancan
   ckeditor
   coffee-rails (~> 4.0.0)

@@ -4,8 +4,13 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
-  end
+    #respond_to do |format|
+      @events = Event.all
+      
+     # format.html
+     # format.json { render json: @events }
+    #end
+    end
 
   # GET /events/1
   # GET /events/1.json
