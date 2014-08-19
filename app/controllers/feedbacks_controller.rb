@@ -21,6 +21,7 @@ class FeedbacksController < ApplicationController
   # GET /feedbacks/new
   def new
     @feedback = Feedback.new
+    FeedbackMailer.welcome_email(@feedback).deliver
   end
 
   # GET /feedbacks/1/edit
@@ -35,7 +36,7 @@ class FeedbacksController < ApplicationController
     respond_to do |format|
       if @feedback.save
         format.html { redirect_to home_index_path, notice: 'Your feedback has been successfully sent.' }
-        format.js { FeedbackMailer.welcome_email(@feedback).deliver }
+        FeedbackMailer.welcome_email(@feedback).deliver
         format.json { render :show, status: :created, location: @feedback }
       else
         format.html { render :new }

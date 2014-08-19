@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-  	@feedback=Feedback.new
+  	@feedback=Feedback.new				
   end
 
   def about
