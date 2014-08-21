@@ -10,6 +10,7 @@ gem "paperclip", "~> 4.1"
 
 gem "ckeditor"
 
+#gem 'mailcatcher'
 #gem 'rails_admin'
 
 gem 'activeadmin',         github: 'gregbell/active_admin'
