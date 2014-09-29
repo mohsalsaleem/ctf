@@ -1,0 +1,57 @@
+a.light-link{
+	color:#666;
+	text-decoration: none;
+	transition:color 0.6s;
+	-moz-transition:color 0.6s; /* Firefox */
+	-webkit-transition:color 0.6s; /* Safari and Chrome */
+	-o-transition:color 0.6s; /* Opera */
+}
+a.light-link:hover{
+	color:#000;
+}
+a.dark-link{
+	color:#FFF;
+	text-decoration: none;
+	transition:color 0.6s;
+	-moz-transition:color 0.6s; /* Firefox */
+	-webkit-transition:color 0.6s; /* Safari and Chrome */
+	-o-transition:color 0.6s; /* Opera */
+}
+a.dark-link:hover{
+	color:#BBB;
+}
+a.spacing-link{
+	letter-spacing: 0px;
+	color: #888;
+	text-decoration: none;
+	transition:letter-spacing 0.4s;
+	-moz-transition:letter-spacing 0.4s; /* Firefox */
+	-webkit-transition:letter-spacing 0.4s; /* Safari and Chrome */
+	-o-transition:letter-spacing 0.4s; /* Opera */
+}
+a.spacing-link:hover{
+	letter-spacing:2px;
+}
+a.size-link{
+	color:#666;
+	font-size:30px;
+	text-decoration: none;
+	transition:font-size 0.6s;
+	-moz-transition:font-size 0.6s; /* Firefox */
+	-webkit-transition:font-size 0.6s; /* Safari and Chrome */
+	-o-transition:font-size 0.6s; /* Opera */
+}
+a.size-link:hover{
+	font-size:33px;
+}
+.modal a.close-modal {
+	color:#FFF;
+	text-decoration: none;
+	transition:color 0.6s;
+	-moz-transition:color 0.6s; /* Firefox */
+	-webkit-transition:color 0.6s; /* Safari and Chrome */
+	-o-transition:color 0.6s; /* Opera */
+}
+.modal a.close-modal:hover{
+	color:#AAA;
+}
