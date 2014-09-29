@@ -9,9 +9,18 @@
   <strong>stats:</strong>
   <%= @project.status %>
 </p>
+<p>
+  <strong>applications:</strong>
+  <%= raw(@project.applications) %>
+</p>
+<p>
+  <strong>adv:</strong>
+  <%= @project.advantages %>
+</p>
+
 </center>
 
-<%= render 'feedbacks/form' %>
+
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

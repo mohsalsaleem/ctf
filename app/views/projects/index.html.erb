@@ -8,23 +8,8 @@
       </ul>
     </div>
     <div class="col-md-7">
-      <h3>Title of the Project</h3>
-      <img src="assets/images/facebook-cover-photos.jpg" height=400px width=800px><br><br><br>
-      This is the title of the project and the description of the event is given here. Hello how are you
-      <h3>Current Status</h3>
-      This is the current status of the project. This is oly for the current projects. <br><br>
-      <h3>Application</h3>
-      These are the uses of the project and where they are applied. This field is only for the current project.<br><br>
-      <h3>Advantages</h3>
-      These are the advantages of the project. This is only for the previous year projects.
-      <br><br>
-      <h3>Student details</h3>
-      These are the students who worked for this project. This is for both the current and previous projects.<br><br>
-      <h3>Suggestions</h3>
-      Please kindly provide any suggestion you have to provide for this project. This suggestion has to be sent along with the project title to the projects team email. 
-      <br><br>
-      <textarea cols=80 rows=20 ></textarea><br><br>
-
+      <h3> Projects </h3>
+      
 
 <center><h1>listing projects like blog roll with thumbnail</h1></center>
 
@@ -33,15 +18,19 @@
       
        <h2> <%= project.title %></h2>
        <br> 
+       <P>PROJECT STATUS</P>
        <%= project.status %>
        <br>
+       <P>PROJECT APPLICATIONS</P>
+       <br>
+
        <%= image_tag project.featured_image.url(:medium) %>
        <br>
-       <%= link_to 'click here to know more about this event', project %>
+       <%= link_to 'click here to know more about this project', project %>
        <hr>
        <% end %>
        <div class="btn btn-primary" >
-    <%= link_to 'New Event' , new_project_path %>
+    <%= link_to 'New Project' , new_project_path %>
 
     </div>
     
