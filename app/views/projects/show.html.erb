@@ -1,11 +1,17 @@
 <p id="notice"><%= notice %></p>
-<center>
-<p><h1>
-  <strong>Name:</strong>
+
+
+
+<div class="row">
+	<div style="padding-left:10%; padding-right:10%;">
+
+		<div class="border-blockos border-left changeBorder" style="width:70%; float:left; min-height:600px; background-color:#DDD; text-align:left;">
+			<p style="font-size:40px;"><strong>Name:</strong>
   <%= @project.title%>
-</h1></p>
-<%= image_tag @project.featured_image.url %>
-<p>
+			<div style="color:#333; font-size:16px;">
+			<hr class="colored-seperator left-seperator change"/>
+			
+ <p>
   <strong>stats:</strong>
   <%= @project.status %>
 </p>
@@ -18,9 +24,20 @@
   <%= @project.advantages %>
 </p>
 
-</center>
+<h3> and list other things that u need :P</h3>
+			<br/><br/><br/>
+			
+		</div>
+	</div>
+		<div class="border-blockos changeBorder" style="width:25%; float:right; min-height:600px; text-align:left;">
+			space for poster :)
+			<%= image_tag @project.featured_image.url %>
+			<h3><%= link_to 'Back to projects listing !', projects_path %></h3>
+		</div>
+
+	</div>
+
+</div>
 
 
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>

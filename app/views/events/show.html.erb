@@ -1,20 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="main-div">
-	<div class="row">
-		<div class="col-md-2" style="margin-top:30px;margin-left:5px;">
-			<ul class="nav nav-stacked">
-				<li><a href="#">kurukshetras</a></li>
-				<li><a href="#">Ipsem Lor</a></li>
-				<li><a href="#">Hello World</a></li>
-				<li><a href="#">How are you??</a></li>
-				<li><a href="#">This is me</a></li>
-			</ul>
-		</div>
-		<div class="col-md-7 border-blackos">
-			<h3><%= @event.name %></h3>
-			<%= image_tag @event.featured_image.url(:large) %><br><br><br>
+
+<div class="row">
+	<div style="padding-left:10%; padding-right:10%;">
+
+		<div class="border-blockos border-left changeBorder" style="width:70%; float:left; min-height:600px; background-color:#DDD; text-align:left;">
+			<p style="font-size:40px;"><strong>Name:</strong>
+	<h3><%= @event.name %></h3>
+			<div style="color:#333; font-size:16px;">
+			<hr class="colored-seperator left-seperator change"/>
+			<div class="col-md-7 border-blackos">
+		<%= image_tag @event.featured_image.url(:large) %>
+			<br><br><br>
 			<h2>short summary:</h2>
 			<%= @event.excerpt %>
 			<h2><br><br>
@@ -22,18 +20,40 @@
   				<h2>Description:</h2>
  				 <%= raw(@event.description) %>
 			</p>
+
+
+<h3> and list other things that u need :P</h3>
 		</div>
-		<div class="col-md-1"></div>
-		<div class="col-md-1">
-			<div align="center">
-			<h3>Date</h3>
-			<%= @event.event_date %>
-			</div>
+
+
+			<br/><br/><br/>
+			
 		</div>
 	</div>
+		<div class="border-blockos changeBorder" style="width:25%; float:right; min-height:600px; text-align:left;">
+			space for poster :)
+			
+			<h3>Date</h3>
+			<%= @event.event_date %>
+			
+
+			<h3><%= link_to 'want to know more about other events ?', events_path %></h3>
+			<br/><br/><br/>
+			
+			<bdi style="font-size:22px;">Departments</bdi><hr class="colored-seperator left-seperator change"/>
+			<div style="font-size:22px;">
+				<p><i class="icon-chevron-right changeColor"></i> <a class="light-link" href="">Kurukshetra</a><br/>
+					<i class="icon-chevron-right changeColor"></i> <a class="light-link" href="">event 2</a><br/>
+					<i class="icon-chevron-right changeColor"></i> <a class="light-link" href="">event 3</a><br/>
+					
+			</div>		
+				</p><br/><br/>
+
+		</div>
+
+	</div>
+
+	</div>
+
 </div>
 
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %> |
-<%= link_to 'Destroy', @event, method: :delete, data: { confirm: 'Are you sure?' } %>

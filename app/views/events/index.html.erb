@@ -1,20 +1,14 @@
 
 <% provide(:title, "events") %>
 <center><h1>Listing events</h1></center>
+<div class="row">
+	<div style="padding-left:10%; padding-right:10%;">
 
-<div class="main-div">
-	<div class="row">
-		<div class="col-md-2" style="margin-top:30px;margin-left:5px;">
-			<ul class="nav nav-stacked">
-				<li><a href="#">Kurukshetra</a></li>
-				<li><a href="#">Ipsem Lor</a></li>
-				<li><a href="#">Hello World</a></li>
-				<li><a href="#">How are you??</a></li>
-				<li><a href="#">This is me</a></li>
-			</ul>
-		</div>
-		<div class="col-md-7">
-			<h3>Events</h3>
+		<div class="col-md-8 border-blockos border-left changeBorder" style="width:70%; float:left; min-height:600px; background-color:#DDD; text-align:left;">
+			<p style="font-size:40px;">events</p>
+			<div style="color:#333; font-size:16px;">
+			<hr class="colored-seperator left-seperator change"/>
+						<h3>Events</h3>
 			
  
 <center><h1>listing events like blog roll with thumbnail</h1></center>
@@ -31,7 +25,7 @@
 		<tbody>
    		<tr>
 		       <td><%= image_tag event.featured_image.url(:medium) %></td>
-		       <td><%= event.excerpt %>
+		       <td>excerpt :: <%= event.excerpt %> <br>
 		       <%= link_to '[click here to know more about this event ...]', event %>
 		       </td>
 		</tr>
@@ -39,31 +33,23 @@
 	</table>
 	<hr>
     <% end %>
-
-       <div class="btn btn-primary" >
-       	
-  <%= link_to 'New Event' , new_event_path %>
-       	
-		</div>
-
-      
-   
-
-
-
-
-		</div>
-		<div class="col-md-1">
+			
+		</div></div>
+		<div class="col-md-4 border-blockos changeBorder"style="width:25%; float:right; min-height:600px; text-align:left;">
+			space for poster :)
 			<div align="center">
-			<h3>Date</h3>
-			02-03-14
+			<h3>events</h3>
+			<br> type something about events etc <br>
 			</div>
-		</div>.
+			<bdi style="font-size:22px;">listing events if wanted </bdi><hr class="colored-seperator left-seperator change"/><br>
+			<div style="font-size:20px;">
+				<p><i class="icon-chevron-right changeColor"></i> <a class="light-link" href="">kurukshetra</a><br/>
+					<i class="icon-chevron-right changeColor"></i> <a class="light-link" href="">other events</a><br/>
+				</p>	
+			</div>	
+		</div>
+		</div>
 
 	</div>
 
 </div>
-
-
-
-

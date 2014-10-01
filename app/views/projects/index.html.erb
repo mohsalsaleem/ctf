@@ -1,49 +1,53 @@
 <% provide(:title, "Projects") %>
-  <div class="main-div">
-  <div class="row">
-    <div class="col-md-2" style="margin-top:30px;margin-left:5px;">
-      <ul class="nav nav-stacked" style="position:fixed;">
-        <li><a href="#">Current</a></li>
-        <li><a href="#">Previous Years</a></li>
-      </ul>
-    </div>
-    <div class="col-md-7">
-      <h3> Projects </h3>
-      
 
+<div class="row">
+  <div style="padding-left:10%; padding-right:10%;">
+
+    <div class="col-md-8 border-blockos border-left changeBorder" style="width:70%; float:left; min-height:600px; background-color:#DDD; text-align:left;">
+      <p style="font-size:40px;">Projects</p>
+      <div style="color:#333; font-size:16px;">
+      <hr class="colored-seperator left-seperator change"/>
+      
+ 
 <center><h1>listing projects like blog roll with thumbnail</h1></center>
 
-
-    <% @projects.each do |project| %>
-      
+<% @projects.each do |project| %>
+      <table>
+    <tbody>
+      <tr>
        <h2> <%= project.title %></h2>
-       <br> 
+     </tr>
+     <tr>
+      <td><%= image_tag project.featured_image.url(:medium) %></td>
+      <td>
        <P>PROJECT STATUS</P>
        <%= project.status %>
        <br>
        <P>PROJECT APPLICATIONS</P>
        <br>
 
-       <%= image_tag project.featured_image.url(:medium) %>
+       
        <br>
        <%= link_to 'click here to know more about this project', project %>
        <hr>
+     </td>
+       </tr>
+        </tbody>
+  </table>
        <% end %>
-       <div class="btn btn-primary" >
-    <%= link_to 'New Project' , new_project_path %>
-
-    </div>
-    
-  
-    
-    </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-1">
+      
+    </div></div>
+    <div class="col-md-4 border-blockos changeBorder"style="width:25%; float:right; min-height:600px; text-align:left;">
+      space for poster :)
       <div align="center">
-      <h3>Date</h3>
-      02-03-14
+      <h3>projects</h3>
+      <br> type something about projects etc <br>
       </div>
+      <bdi style="font-size:22px;">listing other links about projects if needed </bdi><hr class="colored-seperator left-seperator change"/><br>
+    
     </div>
-  </div>
-</div>
+    </div>
 
+  </div>
+
+</div>
