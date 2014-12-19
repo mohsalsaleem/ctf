@@ -16,8 +16,8 @@ ActiveAdmin.register Project do
   end
   
   form do |f|
-    f.inputs " event details " do
-      
+    f.inputs " project details " do
+
       f.input :title
       f.input :status 
       f.input :advantages, as: :ckeditor
