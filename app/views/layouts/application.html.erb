@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ctf Site |  <%= yield(:title) %></title>
+<title>Ctf Site   <%= yield(:title) %></title>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
@@ -19,87 +19,84 @@ $(document).ready(function(){
         });
 </script>
 </head>
-<body style="background-color:#EEE;">
-<header>
-    <div>
-        <table style="height:15px; width:100%;">
-            <tr>
-                <td class="header-block" style="background-color:#008fd5;"></td>      
-            </tr>
-        </table>
-    </div>
-    <div class="title-container">
-        <table class="table">
-            <tr>
-                <td><a class = "light-link" href="/"><%= image_tag 'logo.png' , :size => "300x100" %></a></td>
-                <td class="table_blocks" style="width:20%;">
-                    <table class="side-menu">
-                        <tr class="menu-block"><td><a class="spacing-link" href="www.facebook.com"><b><bdi class="changeColor" style="font-size:18px;">CTF!</bdi></b>Facebook<i><bdi class="changeColor" style="font-size:16px;">></bdi></i></a></td></tr>
-                        <tr class="menu-block"><td><a class="spacing-link" href="/projects"><b><bdi class="changeColor" style="font-size:18px;">CTF!</bdi></b>Projects <i><bdi class="changeColor" style="font-size:16px;">></bdi></i></a></td></tr>
-                        <tr class="menu-block"><td><a class="spacing-link" href="/events"><b><bdi class="changeColor" style="font-size:18px;">CTF!</bdi></b>Events <i><bdi class="changeColor" style="font-size:16px;">></bdi></i></a></td></tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul id="nav" class="change" style="font-size:18px;"  style="position: fixed;">
-        <li style="font-size:17px;"><a href="/">HOME</a></li>
-        <li style="font-size:17px;"><a href="/home/about">ABOUT US</a></li>
-        <li style="font-size:17px;"><a href="/projects">PROJECTS</a></li>
-       
-        <li style="font-size:17px;"><a href="/events">EVENTS</a>
-        </li>
-        <li style="font-size:17px;"><a href="/home/team">TEAM</a></li>
-        <li style="font-size:17px;"><a href="/">DUMMY-1</a></li>
-        <li style="font-size:17px;"><a href="/">DUMMY-2</a></li>
-    </ul>
-</header>
+<body>
 
-<br>
-<br><br>
-<br>
-<br>
-<br>
+
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--a class="navbar-brand" href="index.html"><span>M</span>oderna</a-->
+                    <a class = "navbar-brand" href="/"><%= image_tag 'logo.png' , :size => "300x100" %></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+						<li><a href="/">HOME</a></li>
+                        <li><a href="/home/about">ABOUT US</a></li>
+                        <li><a href="/projects">PROJECTS</a></li>
+                        <li><a href="/events">EVENTS</a></li>
+                        <li><a href="/home/team">TEAM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+	</div>
 <div class="main-div">
     <%= yield %>
 </div>
 
 <footer>
-<div class="footer changeBorder">
-        <table class="table">
-            <br>
-            <tr>
-                <td class="footer-cell" style="width:70px;"><a href="/"><%= image_tag 'logo.png' , :size => "300x100" %></td>
-                
-                <td class="footer-cell" style="width:120px;">
-                    <div style="text-align:left;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<address>
+					<strong>Address here..</strong><br>
+					 
+					  </address>
+					<p>
+						<i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+						<i class="icon-envelope-alt"></i> email@domainname.com
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Pages</h5>
+					<ul class="link-list">
+						
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Add Things over here!</h5>
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	</footer>
+</div>
 
-                        
-                    </div>
-                </td>
-                <td class="footer-cell" style="width:80px; text-align:right; font-size:12px; vertical-align:top;">
-                    <p style="font-size:15px;">REACH US @</p><hr class="colored-seperator right-seperator change"/>
 
-                    <p style="font-size:12px;">Sardar Patel Road, Chennai, India.<br/><i class="icon-phone"></i> +555 453 5633</p>
-                </td>
-                <td class="footer-cell" style="width:80px; text-align:right; font-size:12px; vertical-align:top;">
-                    <p style="font-size:15px;"><a class = "dark-link" href="/home/about">ABOUT CTF</a></p><hr class="colored-seperator right-seperator change"/>
 
-                    <p>enna venalum eluthiko :P</p>
-                </td>
-                
-            
-                <td class="footer-cell" style="width:80px; text-align:right; font-size:12px; vertical-align:top; padding-right:30px;">
-                    <p style="font-size:15px;">CONNECT</p><hr class="colored-seperator right-seperator change"/>
-
-                    <p><a class="dark-link" href="www.facebook.com">Facebook</i></a></p><p><a class="dark-link" href="anypage.html"><i class="icon-facebook-sign"></i></a></p><p><a class="dark-link" href="anypage.html"><i class="icon-google-plus"></i></a></p><p><a class="dark-link" href="anypage.html"><i class="icon-linkedin"></i></a></p><p><a class="dark-link" href="anypage.html"><i class="icon-pinterest"></i></a></p>
-                </td>
-            </tr>
-        </table>
-
-    </div>
-
-</footer>
 </body>
 </body>
 </html>

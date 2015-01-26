@@ -1,113 +1,80 @@
 <% provide(:title,"Home") %>
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
 
-  <center>
+	
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=3000 >
-
-                <!-- Carousel indicators -->
-
-                <ol class="carousel-indicators">
-
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-
-                </ol>   
-
-                <!-- Carousel items -->
-
-                <div class="carousel-inner">
-
-                    <div class="item active">
-                        <%= image_tag 'firefox.png' %>
-
-
-
-                    </div>
-
-                    <div class="item">
-
-                        <%= image_tag 'motivation.jpg' %>
-
-
-                    </div>
-
-                    <div class="item">
-
-                        <%= image_tag 'wallpaper.jpg' %>
-
-
-                    </div>
-
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <%= image_tag 'firefox.png' %>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
                 </div>
+            </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+	
+	
+	
+	
+		<div class="container">
 
-                <!-- Carousel nav -->
-
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-
-                </a>
-
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">
-
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-
-                </a>
-
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Title Here!!
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Somethings...</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4> Somethings...</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Somethings...</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
-       
-  </center>
-    </div>
-
-     
-  
-    <div class="row">
-        
-        <div class="col-md-9">
-            &nbsp;&nbsp;
-            <h3 style="color:#99CCFF">Welcome</h3>
-            We are still building.. <br>Please visit after some time.
         </div>
-        <div class="col-md-2">
-                      <a class="twitter-timeline"  href="https://twitter.com/senthiran" data-widget-id="456858969164623872" data-tweet-limit="3"  data-chrome="nofooter transparent">Tweets by @senthiran</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-
-        </div>
-    </div>
-<div class = "container">
-    <table class="container-table">
-            <tr>
-                <td class="container-table-block border-blockos single-level">
-                    <p style="font-size:17px; height: 120px;"><bdi style="font-size:25px;">Looking</bdi>
-                    to make your mark in one of the most prestigious universities in India?<br/>A 
-                    <bdi style="font-size:22px;">prospective student?</bdi><br/></p>
-                    <hr class="colored-seperator change right-seperator"/>
-                    <p style="text-align:right; font-size:30px;"><a class="size-link" href="anypage.html">Learn more <i class="icon-chevron-right icon-large changeColor"></i></a></p>
-                </td>
-                <td class="container-table-block change blockos single-level">
-                    <p style="font-size:17px; height: 120px;"><bdi style="font-size:25px;">CEG's</bdi> research labs are
-                    powering innovation<br/>by collaborating with top universities and fortune 
-                    <bdi style="font-size:22px;">500 corporations</bdi><br/></p>
-                    <hr class="white-seperator right-seperator"/>
-                    <p style="text-align:right; font-size:30px;"><a class="size-link" href="anypage.html" style="color:#FFF;">Read more <i class="icon-chevron-right icon-large"></i></a></p>
-                </td>
-                <td class="container-table-block border-blockos single-level">
-                    <p style="font-size:17px; height: 120px;"><bdi style="font-size:25px;">Explore</bdi>
-                    CEG's century old campus<br/>and the achievements of some of our distinguished
-                    <bdi style="font-size:22px;">alumni</bdi><br/></p>
-                    <hr class="colored-seperator change right-seperator"/>
-                    <p style="text-align:right; font-size:30px;"><a class="size-link" href="anypage.html">Know more <i class="icon-chevron-right icon-large changeColor"></i></a></p>
-                </td>
-            </tr>
-        </table>
-        
-    </div>
     
+
+    
+
